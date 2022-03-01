@@ -1,27 +1,15 @@
-> #  Hero Escape from Dungeon
+#  Hero Escape from Dungeon
 
 
-
+<br>
+<br>
 
 <p align=center>
   <img src="lib\Hero.png" alt="Hero" width="50%" style="; min-width:150px;" />
 </p>
 
-
-
-
-
-
-
-> Table of content
-
-[TOC]
-
-
-
----
-
-
+<br>
+<br>
 
 # Introduction
 
@@ -30,7 +18,8 @@
 In Artificial Intelligence Planning, there are different types of planning, and this problem is an example of `Classical Planning`.
 
 
-
+<br>
+<br>
 
 
 # Problem Definition
@@ -45,11 +34,11 @@ Help a `hero` to get out of the **dungeon**! The hero woke up in a dungeon full 
 
 * One of the empty rooms is the “**goal**”: it has an exit so that the hero can escape.
 
-
+<br>
 
 The hero is lucky since he has full knowledge about the dungeon. But not that lucky – just after the hero leaves room s/he just visited, the room is destroyed and cannot be revisited.
 
-
+<br>
 
 The hero can perform the following actions – but only if s/he is alive!
 
@@ -62,7 +51,7 @@ The hero can perform the following actions – but only if s/he is alive!
 
 * Disarm a trap – if there is a trap in the room the hero is in, and the hero is empty-handed (does not hold a sword), then the hero can disarm it
 
-
+<br>
 
 However,there are some (dangerous) constraints the hero has to consider:
 
@@ -70,7 +59,8 @@ However,there are some (dangerous) constraints the hero has to consider:
 * If the hero destroys the sword in a room with a monster in it, the monster kills him/her as well.
 * The only action the hero can safely perform in a room with a trap in it is the “disarm a trap” action. Any other action (even moving away) triggers the trap, killing the hero.
 
-
+<br>
+<br>
 
 ## Description of The Dungeon
 
@@ -89,49 +79,46 @@ Problems are specified such that cells stand for rooms and edges between them re
 blank is a empty room.
 
 
+<br>
+<br>
+<br>
+
+>### Problem 01
+
+<br>
+
+<img src="lib\Problem 01.png" alt="Problem 01">
+
+<br>
+<br>
+<br>
+
+>### Problem 02
+
+<br>
+
+<img src="lib\Problem 02.png" alt="Problem 02">
+
+<br>
+<br>
+<br>
+
+>### Problem 03
+
+<br>
+
+<img src="lib\Problem 03.png" alt="Problem 02">
 
 
-
-### Problem 01
-
-
-
-![Problem 01](lib\Problem 01.png)
-
-
-
-
-
-
-
-### Problem 02
-
-
-
-![Problem 01](lib\Problem 02.png)
-
-
-
-
-
-
-
-### Problem 03
-
-
-
-![Problem 01](lib\Problem 03.png)
-
-
-
-
-
+<br>
+<br>
 
 
 ---
 
 
-
+<br>
+<br>
 
 
 # Solution details
@@ -139,12 +126,13 @@ blank is a empty room.
 A **domain** file is designed that will be used to solve this three different problems. The models are then run in `planning engines` to generate planning solutions.
 
 
+<br>
 
 ## Interpretation of Operator Schema
 
 Different rooms have different features in the provided problem and require some precondition to enter that room. The domain is designed so that each action will define features and preconditions to move to a room. The provided problems have four types of rooms with unique characteristics. In this design, six actions describe the movement between these four rooms to find a plan to move the hero from the initial room to the escape room.
 
-
+<br>
 
 ### 1. move_to_sword-room
 
@@ -157,7 +145,7 @@ This macro action moves the hero to the sword room, where the hero will pick a s
 
 The effect of this action is that the hero will pick a sword from that room.
 
-
+<br>
 
 ### 2. move_to_sword-room_to_drop
 
@@ -170,7 +158,7 @@ This macro action moves the hero to the sword room, where the hero will drop the
 
 The effect of this action is that the hero will drop the sword, and his hand will be empty.
 
-
+<br>
 
 ### 3. move_to_monster-room
 
@@ -183,7 +171,7 @@ This action moves the hero to the monster room, where the hero will do nothing b
 
 The effect of this action is the hero will stay in the room while holding a sword in his hand.
 
-
+<br>
 
 ### 4. move_to_trap-room
 
@@ -196,7 +184,7 @@ This macro action moves the hero to a trap room where the hero will disarm the t
 
 The effect of this action is that the hero will disarm the trap of that room.
 
-
+<br>
 
 ### 5. move_to_empty-room
 
@@ -208,7 +196,7 @@ This macro action moves the hero to an empty room where the hero can drop his sw
 
 The effect of this action is that the hero will drop the sword if he is carrying any.
 
-
+<br>
 
 ### 6. move_to_escape-room
 
@@ -221,12 +209,12 @@ This action moves the hero to escape room which is the ultimate goal of the prob
 The effect of this action is that the hero will reach the goal.
 
 
-
-
+<br>
+<br>
 
 ---
 
-
+<br>
 
 # Planning Engine
 
@@ -237,51 +225,52 @@ The designed domain and problem file can be uploaded to one of this online plann
 
 
 
-
+<br>
+<br>
 
 ---
-
+<br>
 
 
 # Result in State Space Representation
 
-
+<br>
+<br>
 
 > ### State Space of Problem 01
 
+<br>
 
+<img src="lib\Statespace of Problem 01.png" alt="Statespace of Problem 01">
 
-![Problem 01](lib\Statespace of Problem 01.png)
-
-
-
+<br>
+<br>
 
 
 > ### State Space of Problem 02
 
+<br>
 
+<img src="lib\Statespace of Problem 02.png" alt="Statespace of Problem 02">
 
-![Statespace of Problem 02](D:\B-AI-Designing\Hero Escape from Dungeon\lib\Statespace of Problem 02.png)
-
-
-
-
-
-
-
+<br>
+<br>
 
 
 > ### State Space of Problem 03
 
+<br>
+
+<img src="lib\Statespace of Problem 03.png" alt="Statespace of Problem 03">
 
 
-![Statespace of Problem 03](D:\B-AI-Designing\Hero Escape from Dungeon\lib\Statespace of Problem 03.png)
-
-
-
+<br>
+<br>
 
 
 ---
 
 
+<br>
+<br>
 
