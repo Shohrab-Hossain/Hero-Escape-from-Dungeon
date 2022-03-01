@@ -1,4 +1,4 @@
-#  Hero Escape from Dungeon
+#  Hero Escapes from Dungeon
 
 
 <br>
