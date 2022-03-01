@@ -5,7 +5,7 @@
 <br>
 
 <p align=center>
-  <img src="lib\Hero.png" alt="Hero" width="50%" style="; min-width:150px;" />
+  <img src="lib\Hero.png" alt="Hero" width="40%" style="; min-width:150px;" />
 </p>
 
 <br>
@@ -76,7 +76,7 @@ Problems are specified such that cells stand for rooms and edges between them re
 
 **` T`** stands for trap room, and
 
-blank is a empty room.
+Blank is an empty room.
 
 
 <br>
