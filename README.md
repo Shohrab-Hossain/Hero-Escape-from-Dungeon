@@ -3,8 +3,9 @@
 
 
 
-
-<img src="lib\Hero.png" alt="Hero" width="50%" style="; min-width:150px;" />
+<p align=center>
+  <img src="lib\Hero.png" alt="Hero" width="50%" style="; min-width:150px;" />
+</p>
 
 
 
