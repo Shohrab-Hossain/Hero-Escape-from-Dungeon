@@ -5,7 +5,7 @@
 <br>
 
 <p align=center>
-  <img src="lib\Hero.png" alt="Hero" width="40%" style="; min-width:150px;" />
+  <img src="lib\Hero.png" alt="Hero" width="40%" style="min-width:150px;" />
 </p>
 
 <br>
@@ -17,6 +17,22 @@
 
 In Artificial Intelligence Planning, there are different types of planning, and this problem is an example of `Classical Planning`.
 
+<br>
+
+
+
+> Topic of this study are listed below :
+
+1. [Problem Definition](#problem-definition)
+    * [Description of The Dungeon](#description-of-the-dungeon)
+
+2. [Solution details](#solution-details)
+
+   * [Interpretation of Operator Schema](#interpretation-of-operator-schema)
+
+3. [Planning Engine](#planning-engine)
+
+4. [Result in State Space Representation](#result-in-state-space-representation)
 
 <br>
 <br>
@@ -112,12 +128,6 @@ Blank is an empty room.
 
 <br>
 <br>
-
-
----
-
-
-<br>
 <br>
 
 
@@ -211,9 +221,6 @@ The effect of this action is that the hero will reach the goal.
 
 <br>
 <br>
-
----
-
 <br>
 
 # Planning Engine
@@ -227,8 +234,6 @@ The designed domain and problem file can be uploaded to one of this online plann
 
 <br>
 <br>
-
----
 <br>
 
 
